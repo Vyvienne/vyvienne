@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MercyCorte Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="right-controls">
+                <!-- <div class="theme-toggle" id="theme-toggle"></div> -->
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" data-section="about">About</a></li>
+                <li><a href="#skills" data-section="skills">Skills</a></li>
+                <li><a href="#projects" data-section="projects">Projects</a></li>
+                <li><a href="#contact" data-section="contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <!-- <div class="heartbeat-circle"></div> -->
+    <div class="heartbeat-circle-2"></div>
+    <div class="heartbeat-circle-3"></div>
+
+
+    <section class="hero">
+        <img class="avatar"
+            src="https://avatars.githubusercontent.com/u/97293388?s=400&u=aa03a9f8d9ff22c9a5aed7fe7d02ff06e8d5c393&v=4"
+            alt="User Avatar">
+        <div class="hero-content">
+            <h1 class="typewriter">Hi, I'm Vivien! </h1>
+            <p>Software Developer | Backend-focused | Going Fullstack soon!</p>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content"></div>
+        <p>I'm a backend-focused software engineer with over 2 years of experience working with C#, .NET,
+            and SQL Server.
+            I have been building and maintaining backend systems that support real-time data analytics for
+            physical spaces
+            like retail stores and public venues. I enjoy solving technical problems, writing clean and maintainable
+            code, and
+            collaborating across teams to deliver reliable features. My work has included developing APIs, streamlining
+            internal
+            workflows, and improving performance for large data queries. I’m always looking to grow as a developer, take
+            on new challenges, and contribute to impactful products!</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">C#</div>
+            <div class="skill-card">JavaScript</div>
+            <div class="skill-card">Java</div>
+            <div class="skill-card">ASP.NET</div>
+            <div class="skill-card">MySQL</div>
+            <div class="skill-card">React.js</div>
+            <div class="skill-card">Git</div>
+            <div class="skill-card">Odoo</div>
+            <div class="skill-card">Jenkins</div>
+            <div class="skill-card">ArgoCD</div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <a href="https://github.com/Leykwan132/ai-healthcare" class="project-card">
+                <h3>MediBuddyAI</h3>
+                <p>AI healthcare scheduler/reminder and follow-up application</p>
+            </a>
+            <a href="https://github.com/Vyvienne/LQ-Online-ucsi" class="project-card">
+                <h3>LQ Online</h3>
+                <p>A Flutter project of LQ-Online hotel mobile app.</p>
+            </a>
+            <a href="https://github.com/Vyvienne/Group-3-restaurant" class="project-card">
+                <h3>Restaurant Ordering System</h3>
+                <p>A responsive web-based restaurant ordering system built as part of a university group project.</p>
+            </a>
+            <a href="https://github.com/Vyvienne/fractionCalculator-java" class="project-card">
+                <h3>Fraction Calculator</h3>
+                <p>A simple console fraction calculator.</p>
+            </a>
+            <a href="https://github.com/Vyvienne/wordLengthHistogram-java" class="project-card">
+                <h3>Word Length Histogram </h3>
+                <p>A simple program to calculate the occurrence of words with the specified number of character.</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Your Email" required />
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <button id="backToTop" aria-label="Back to Top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="19" x2="12" y2="5"></line>
+            <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+    </button>
+
+    <footer>
+        <p> Let's connect! </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
