@@ -21,10 +21,12 @@ html {
 :root {
     --bg-color: #f4f4f4;
     --text-color: #333;
-    --primary-color: #6c63ff;
-    --accent-color: #ffd700;
-    --nav-bg: rgba(255, 255, 255, 0.85);
-    --nav-bg-dark: rgba(18, 18, 18, 0.85);
+    --primary-color: #900202;
+    --secondary-color: #9a0000;
+    --accent-color: #ff4081;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --card-background: rgba(255, 255, 255, 0.9);
 }
 
 body {
@@ -40,6 +42,10 @@ body {
     transition: background 0.3s, color 0.3s;
     overflow-x: hidden;
     padding-top: 4rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 @keyframes gradientShift {
@@ -389,6 +395,52 @@ body.dark-mode #theme-toggle::before {
     word-break: break-word;
 }
 
+.social-links {
+    margin-top: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: left;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: white;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-decoration: none;
+}
+
+.social-btn.github {
+    background: #333;
+}
+
+.social-btn.linkedin {
+    background: #0077b5;
+}
+
+.social-btn.youtube {
+    background: #ff0000;
+}
+
+.social-btn.twitter {
+    background: #1da1f2;
+}
+
+.social-btn.cv {
+    background: #6c63ff;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
 /* Mobile hero adjustments */
 @media (max-width: 768px) {
     .hero {
@@ -491,32 +543,220 @@ section {
 }
 
 .project-card:hover {
-    background-color: #6bc1ff;
-    transform: translateY(-0.3rem);
+    background-color: #0d467c;
+    transform: translateY(-5px);
     box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+/* Hide image by default */
+.project-card .image-card {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+}
+
+/* Show image when hovered */
+.project-card:hover .image-card {
+    opacity: 1;
+    max-height: 300px;
+    /* adjust based on image size */
+}
+
+.project-card .image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
 }
 
 /* Skill grid - multiple cards per row */
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(12em, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
 }
 
 .skill-card {
-    background: var(--primary-color);
+    background: #0d467c;
     color: white;
     padding: 1rem;
-    border-radius: 0.5rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
     text-decoration: none;
 }
 
 .skill-card:hover {
-    transform: translateY(-0.3rem);
-    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
 }
+
+#awards-honors-images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Full-width image card */
+.image-card {
+    grid-column: 1 / -1;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 500px;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.6s ease;
+}
+
+
+/* Experience */
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.experience-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+    overflow: visible;
+}
+
+.experience-image {
+    flex: 0 0 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+#cat {
+    width: 100%;
+    max-width: 260px;
+    transition: transform 0.4s ease;
+}
+
+#cat .ears {
+    transform-origin: center top;
+    transition: transform 0.4s ease;
+}
+
+.experience-image:hover #cat {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+.experience-image:hover #cat .ears {
+    transform: rotate(5deg);
+}
+
+.timeline {
+    position: relative;
+    margin: 0 auto;
+    padding: 0 1rem;
+    max-width: 700px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: var(--muted-color);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 50px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(187, 134, 252, 0.2);
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: var(--muted-color);
+    margin-bottom: 0.3rem;
+}
+
+.timeline-content {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateY(-3px);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+.timeline-content h4 {
+    margin: 0.2rem 0 0.5rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--muted-color);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        padding-left: 35px;
+    }
+
+    .timeline-dot {
+        left: 2px;
+    }
+
+    /* Hide GIF on mobile */
+    .experience-wrapper {
+        flex-direction: column;
+    }
+
+    .experience-image {
+        display: none;
+    }
+}
+
 
 /* Forms */
 form {
@@ -554,7 +794,7 @@ form button:hover {
     right: 2%;
     background: var(--primary-color);
     color: white;
-    border-radius: 50%;
+    border-radius: 20%;
     padding: 0.6em;
     font-size: 1.2em;
     cursor: pointer;
@@ -566,6 +806,7 @@ form button:hover {
 #backToTop:hover {
     transform: translateY(-0.2rem) scale(1.1);
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+    background-color: #0d467c;
 }
 
 /* Mobile adjustment */

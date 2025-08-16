@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap">
 </head>
 
 <body>
@@ -22,9 +23,11 @@
             </div>
             <ul class="nav-links" id="nav-links">
                 <li><a href="#about" data-section="about">About</a></li>
-                <li><a href="#skills" data-section="skills">Skills</a></li>
+                <li><a href="#experience" data-section="experience">Experience</a></li>
+                <!-- <li><a href="#skills" data-section="skills">Skills</a></li> -->
                 <li><a href="#projects" data-section="projects">Projects</a></li>
-                <li><a href="#contact" data-section="contact">Contact</a></li>
+                <li><a href="#honors" data-section="projects">Awards & Honors</a></li>
+                <!-- <li><a href="#contact" data-section="contact">Contact</a></li> -->
             </ul>
 
         </nav>
@@ -42,11 +45,29 @@
         <div class="hero-content">
             <h1 class="typewriter">Hi, I'm Vivien! </h1>
             <p>Software Developer | Backend-focused | Going Fullstack soon!</p>
+            <div class="social-links">
+                <a href="https://github.com/vyvienne" target="_blank" class="social-btn github" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/vivien-tan-wan-yin" target="_blank" class="social-btn linkedin"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://youtube.com/@vivientanwy" target="_blank" class="social-btn youtube"
+                    aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="https://drive.google.com" class="social-btn cv" aria-label="CV">
+                    <i class="fas fa-file-download"></i>
+                </a>
+            </div>
+
+            <!-- Download Resume Button -->
+
         </div>
     </section>
 
     <section id="about" class="about">
-        <h2>About Me</h2>
         <div class="about-content"></div>
         <p>I'm a backend-focused software engineer with over 2 years of experience working with C#, .NET,
             and SQL Server.
@@ -60,7 +81,7 @@
             on new challenges, and contribute to impactful products!</p>
     </section>
 
-    <section id="skills" class="skills">
+    <!-- <section id="skills" class="skills">
         <h2>Skills</h2>
         <div class="skills-grid">
             <div class="skill-card">C#</div>
@@ -74,14 +95,99 @@
             <div class="skill-card">Jenkins</div>
             <div class="skill-card">ArgoCD</div>
         </div>
+    </section> -->
+
+    <section id="experience" class="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-wrapper">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">April 2025 – Present</div>
+                    <div class="timeline-content">
+                        <a href="https://www.footfallcam.com/en/">
+                            <h3>Software Engineer</h3>
+                            <h4>FootfallCam</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">April 2023 – March 2025</div>
+                    <div class="timeline-content">
+                        <a href="https://www.footfallcam.com/en/">
+                            <h3>Associate Software Engineer</h3>
+                            <h4>FootfallCam</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sept 2022 – Dec 2022</div>
+                    <div class="timeline-content">
+                        <a href="https://www.pbebank.com/">
+                            <h3>IT Intern</h3>
+                            <h4>Public Bank Berhad</h4>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">Sept 2020 – May 2021</div>
+                    <div class="timeline-content">
+                        <a href="https://www.ansell.com/my/en">
+                            <h3>Project Management Trainee</h3>
+                            <h4>Ansell</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Interactive Cat -->
+            <div class="experience-image">
+                <svg id="cat" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Cat Ears -->
+                    <polygon points="50,30 70,70 30,70" fill="#f9e4d2" stroke="#d4bda8" stroke-width="4" />
+                    <polygon points="150,30 170,70 130,70" fill="#f9e4d2" stroke="#d4bda8" stroke-width="4" />
+
+                    <!-- Head -->
+                    <circle cx="100" cy="120" r="80" fill="#f9e4d2" stroke="#d4bda8" stroke-width="4" />
+
+                    <!-- Eyes -->
+                    <circle class="eye" cx="75" cy="110" r="7" fill="#000" />
+                    <circle class="eye" cx="125" cy="110" r="7" fill="#000" />
+
+                    <!-- Nose -->
+                    <polygon points="95,120 105,120 100,127" fill="#e89cae" />
+
+                    <!-- Mouth -->
+                    <path d="M100 127 Q100 133 92 133" stroke="#000" stroke-width="2" fill="none" />
+                    <path d="M100 127 Q100 133 108 133" stroke="#000" stroke-width="2" fill="none" />
+
+                    <!-- Cheeks -->
+                    <circle class="cheek" cx="65" cy="125" r="8" fill="#f4b6c2" opacity="0.7" />
+                    <circle class="cheek" cx="135" cy="125" r="8" fill="#f4b6c2" opacity="0.7" />
+                </svg>
+            </div>
+        </div>
     </section>
 
+
     <section id="projects" class="projects">
-        <h2>Projects</h2>
+        <h2 class="section-title">Projects</h2>
+        <br />
         <div class="projects-grid">
             <a href="https://github.com/Leykwan132/ai-healthcare" class="project-card">
                 <h3>MediBuddyAI</h3>
-                <p>AI healthcare scheduler/reminder and follow-up application</p>
+                <p>AI healthcare scheduler/reminder and
+                    follow-up
+                    application <strong><em> AAIMS25 AI Code Fest Hackathon </em></strong></p>
+                <br />
+                <div class="image-card">
+                    <img id="medibuddy_ai-image" src="images/mediBuddyAI/0.png" alt="Skill">
+                </div>
             </a>
             <a href="https://github.com/Vyvienne/LQ-Online-ucsi" class="project-card">
                 <h3>LQ Online</h3>
@@ -102,7 +208,25 @@
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="honors" class="honors">
+        <h2 class="section-title">Awards & Honors</h2>
+        <br />
+        <div class="skills-grid">
+            <a href="https://kuala-lumpur.aitinkerers.org/hackathons/h_2YdqIPR1yZs/results" class="skill-card">
+                <p>Winner of AAIMS25 AI Code Fest - Healthcare Reimagined</p>
+            </a>
+            <div class="skill-card">Nominee for Veledictorian Award Class of 2023</div>
+            <div class="skill-card">Kuok Foundation Scholarship Recipient</div>
+            <div class="skill-card">UCSI Trust Scholarship Recipient</div>
+        </div>
+        <br />
+        <div class="image-card">
+            <img id="awards-honors-images" src="images/awards-and-honors/AAIMS25/0.jpg" alt="Awards & Honors">
+        </div>
+
+    </section>
+
+    <!-- <section id="contact" class="contact">
         <h2>Contact</h2>
         <form>
             <input type="text" placeholder="Your Name" required />
@@ -110,7 +234,7 @@
             <textarea placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
-    </section>
+    </section> -->
 
     <button id="backToTop" aria-label="Back to Top">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -121,7 +245,11 @@
     </button>
 
     <footer>
-        <p> Let's connect! </p>
+        <p> &copy; 2025 vyvienne.github.io
+            <!-- <a href="https://linkedin.com/in/vivien-tan-wan-yin" target="_blank" aria-label="LinkedIn">
+                LinkedIn
+            </a> -->
+        </p>
     </footer>
 
     <script src="script.js"></script>

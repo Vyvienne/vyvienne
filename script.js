@@ -73,3 +73,45 @@ const observer = new IntersectionObserver(entries => {
 
 sections.forEach(section => observer.observe(section));
 
+// Images slideshow section
+// MediBuddyAI
+
+const medibuddy_ai = [
+    "images/medibuddy-ai/0.png",
+    "images/medibuddy-ai/1.png",
+    "images/medibuddy-ai/2.png",
+    "images/medibuddy-ai/3.png",
+    "images/medibuddy-ai/4.png"
+];
+
+let index = 0;
+const imgElement = document.getElementById("medibuddy_ai-image");
+
+setInterval(() => {
+    index = (index + 1) % medibuddy_ai.length;
+    imgElement.style.opacity = 0; // fade out
+    setTimeout(() => {
+        imgElement.src = medibuddy_ai[index];
+        imgElement.style.opacity = 1; // fade in
+    }, 300);
+}, 2000);
+
+
+// AwardsAndHonors
+const awards_honors = [
+    "images/awards-and-honors/AAIMS25/0.jpg",
+    "images/awards-and-honors/AAIMS25/1.jpg",
+    "images/awards-and-honors/AAIMS25/2.jpg"
+];
+
+let awards_honorsIndex = 0;
+const awards_honorsImgElement = document.getElementById("awards-honors-images");
+
+setInterval(() => {
+    awards_honorsIndex = (awards_honorsIndex + 1) % awards_honors.length;
+    awards_honorsImgElement.style.opacity = 0; // fade out
+    setTimeout(() => {
+        awards_honorsImgElement.src = awards_honors[awards_honorsIndex];
+        awards_honorsImgElement.style.opacity = 1; // fade in
+    }, 300);
+}, 3000);
