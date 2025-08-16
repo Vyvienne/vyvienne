@@ -376,6 +376,10 @@ body.dark-mode #theme-toggle::before {
     min-width: 180px;
 }
 
+.avatar:hover {
+    transform: scale(1.05);
+}
+
 .hero-content {
     flex: 2 1 min(250px, 55%);
     min-width: 0;
@@ -646,21 +650,13 @@ section {
 
 #cat {
     width: 100%;
-    max-width: 260px;
-    transition: transform 0.4s ease;
-}
-
-#cat .ears {
-    transform-origin: center top;
+    max-width: 500px;
+    border-radius: 20%;
     transition: transform 0.4s ease;
 }
 
 .experience-image:hover #cat {
     transform: rotate(-3deg) scale(1.05);
-}
-
-.experience-image:hover #cat .ears {
-    transform: rotate(5deg);
 }
 
 .timeline {

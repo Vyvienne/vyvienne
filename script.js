@@ -74,8 +74,8 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => observer.observe(section));
 
 // Images slideshow section
-// MediBuddyAI
 
+// MediBuddyAI
 const medibuddy_ai = [
     "images/medibuddy-ai/0.png",
     "images/medibuddy-ai/1.png",
@@ -95,6 +95,69 @@ setInterval(() => {
         imgElement.style.opacity = 1; // fade in
     }, 300);
 }, 2000);
+
+
+// HeartMart
+const heart_mart = [
+    "images/heart-mart/0.png",
+    "images/heart-mart/1.png",
+    "images/heart-mart/2.png",
+    "images/heart-mart/3.png"
+];
+
+let heart_mart_index = 0;
+const heart_mart_imgElement = document.getElementById("heart-mart-image");
+
+setInterval(() => {
+    heart_mart_index = (heart_mart_index + 1) % heart_mart.length;
+    heart_mart_imgElement.style.opacity = 0; // fade out
+    setTimeout(() => {
+        heart_mart_imgElement.src = heart_mart[heart_mart_index];
+        heart_mart_imgElement.style.opacity = 1; // fade in
+    }, 300);
+}, 2000);
+
+// LQ Online
+const lq_online = [
+    "images/lq-online/0.png",
+    "images/lq-online/1.png",
+    "images/lq-online/2.png",
+    "images/lq-online/3.png"
+];
+
+let lq_online_index = 0;
+const lq_online_imgElement = document.getElementById("lq-online-image");
+
+setInterval(() => {
+    lq_online_index = (lq_online_index + 1) % lq_online.length;
+    lq_online_imgElement.style.opacity = 0; // fade out
+    setTimeout(() => {
+        lq_online_imgElement.src = lq_online[lq_online_index];
+        lq_online_imgElement.style.opacity = 1; // fade in
+    }, 300);
+}, 2000);
+
+// Group3Restaurant
+const group_3_restaurant = [
+    "images/group-3-restaurant/0.png",
+    "images/group-3-restaurant/1.png",
+    "images/group-3-restaurant/2.png",
+    "images/group-3-restaurant/3.png",
+    "images/group-3-restaurant/4.png"
+];
+
+let group_3_restaurant_index = 0;
+const group_3_restaurant_imgElement = document.getElementById("group-3-restaurant-image");
+
+setInterval(() => {
+    group_3_restaurant_index = (group_3_restaurant_index + 1) % group_3_restaurant.length;
+    group_3_restaurant_imgElement.style.opacity = 0; // fade out
+    setTimeout(() => {
+        group_3_restaurant_imgElement.src = group_3_restaurant[group_3_restaurant_index];
+        group_3_restaurant_imgElement.style.opacity = 1; // fade in
+    }, 300);
+}, 2000);
+
 
 
 // AwardsAndHonors
