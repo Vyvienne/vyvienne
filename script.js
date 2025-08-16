@@ -162,9 +162,9 @@ setInterval(() => {
 
 // AwardsAndHonors
 const awards_honors = [
-    "images/awards-and-honors/AAIMS25/0.jpg",
     "images/awards-and-honors/AAIMS25/1.jpg",
-    "images/awards-and-honors/AAIMS25/2.jpg"
+    "images/awards-and-honors/AAIMS25/2.jpg",
+    "images/awards-and-honors/AAIMS25/3.jpg"
 ];
 
 let awards_honorsIndex = 0;
