@@ -1,7 +1,7 @@
 
 # Hi, I'm Vivien!
 
-<img width="3780" height="1890" alt="banner " src="https://github.com/user-attachments/assets/b1286c20-bcee-415a-b479-2e4ee9b1a6f9" />
+<img width="3780" height="1890" alt="banner " src="./images/banner.png" />
 
 <br> </br>
 
