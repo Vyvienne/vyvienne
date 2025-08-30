@@ -368,7 +368,7 @@ body.dark-mode #theme-toggle::before {
 }
 
 .avatar {
-    flex: 1 1 min(200px, 40%);
+    flex: 1 1 min(150px, 40%);
     max-width: 30%;
     aspect-ratio: 1/1;
     border-radius: 50%;
