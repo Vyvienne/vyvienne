@@ -75,6 +75,10 @@ sections.forEach(section => observer.observe(section));
 
 // Images slideshow section
 
+// Chatty Frog
+
+// Random Quote Machine
+
 // MediBuddyAI
 const medibuddy_ai = [
     "images/medibuddy-ai/0.png",
