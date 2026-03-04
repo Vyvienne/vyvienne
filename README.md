@@ -21,7 +21,7 @@
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start;">
   <!-- <img src="https://github-readme-stats.vercel.app/api?username=Vyvienne&show_icons=true&theme=tokyonight" alt="Vyvienne's GitHub stats" /> -->
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vyvienne&layout=compact&theme=tokyonight" alt="Top Languages" height="150" />
+  <!-- <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vyvienne&layout=compact&theme=tokyonight" alt="Top Languages" height="150" /> -->
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Vyvienne&theme=tokyonight" alt="Repos per language" height="150" />
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Vyvienne&theme=tokyonight" alt="Most commit language" height="150" />
 </div>
