@@ -3,21 +3,9 @@
 
 <!-- <img width="3780" height="1890" alt="banner " src="./images/banner.png" /> -->
 
-<br> </br>
+<!-- <br> </br> -->
 
-<div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
-  <img src="https://img.shields.io/badge/-C%23-239120?logo=csharp&logoColor=white&style=flat" />
-  <img src="https://img.shields.io/badge/-.NET-512BD4?logo=dotnet&logoColor=white&style=flat" />
-  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat" />
-  <img src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=flat" />
-  <img src="https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white&style=flat" />
-  <img src="https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=flat" />
-  <img src="https://img.shields.io/badge/-Jenkins-D24939?logo=jenkins&logoColor=white&style=flat" />
-  <img src="https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat" />
-  <img src="https://img.shields.io/badge/-ArgoCD-ef7b4d?logo=argo&logoColor=white&style=flat" />
-</div>
-
-<br> </br>
+<!-- <br> </br> -->
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-start;">
   <!-- <img src="https://github-readme-stats.vercel.app/api?username=Vyvienne&show_icons=true&theme=tokyonight" alt="Vyvienne's GitHub stats" /> -->
@@ -36,13 +24,27 @@
   <img src="https://img.shields.io/badge/Commits%20this%20year-💻-success" />
 </div>
 
+<br/>
+
+<div style="display: flex; flex-wrap: wrap; gap: 6px; align-items: center;">
+  <img src="https://img.shields.io/badge/-C%23-239120?logo=csharp&logoColor=white&style=flat" />
+  <img src="https://img.shields.io/badge/-.NET-512BD4?logo=dotnet&logoColor=white&style=flat" />
+  <img src="https://img.shields.io/badge/-JavaScript-F7DF1E?logo=javascript&logoColor=black&style=flat" />
+  <img src="https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=black&style=flat" />
+  <img src="https://img.shields.io/badge/-Java-007396?logo=java&logoColor=white&style=flat" />
+  <img src="https://img.shields.io/badge/-MySQL-4479A1?logo=mysql&logoColor=white&style=flat" />
+  <img src="https://img.shields.io/badge/-Jenkins-D24939?logo=jenkins&logoColor=white&style=flat" />
+  <img src="https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white&style=flat" />
+  <img src="https://img.shields.io/badge/-ArgoCD-ef7b4d?logo=argo&logoColor=white&style=flat" />
+</div>
+
+
 ---
 
 ## Learning
 - **n8n** basics to advanced  
 - **React.js** basics to advanced  
 - **Microservices & Event-Driven Architecture**  
-- **Cybersecurity** (ISC2 CC ,Coursera Plus study path)  
 
 
 ---
