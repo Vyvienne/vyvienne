@@ -1,7 +1,7 @@
 
 # Hi, I'm Vivien!
 
-<img width="3780" height="1890" alt="banner " src="./images/banner.png" />
+<!-- <img width="3780" height="1890" alt="banner " src="./images/banner.png" /> -->
 
 <br> </br>
 
@@ -39,6 +39,7 @@
 ---
 
 ## Learning
+- **n8n** basics to advanced  
 - **React.js** basics to advanced  
 - **Microservices & Event-Driven Architecture**  
 - **Cybersecurity** (ISC2 CC ,Coursera Plus study path)  
@@ -46,7 +47,7 @@
 
 ---
 
-> _"Code is poetry — and sometimes, debugging is detective work."_  
+> _"Planning. Coding. Executing. Debugging. Repeat."_  
 
 
 <!---
