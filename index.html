@@ -4,277 +4,190 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Vivien Tan | Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Raleway:wght@500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="right-controls">
-                <!-- <div class="theme-toggle" id="theme-toggle"></div> -->
-                <div class="hamburger" id="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+    <div class="bg"><i></i><i></i><i></i></div>
+
+    <div class="top">
+        <h1 class="logo">VIVIEN <b>TAN</b></h1>
+        <div class="cal" aria-hidden="true"><b id="date">--/--</b><span id="day">---</span></div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"
+            aria-controls="menu"><span></span><span></span><span></span></button>
+    </div>
+
+    <nav id="menu" aria-label="Sections">
+        <div class="cat-ascii" aria-hidden="true">
+            <pre>   /\_/\
+  ( -.- )
+ /       \_
+(  _____   )
+ `-'     `-'</pre>
+            <i>z</i><i>Z</i><i>z</i>
+        </div>
+        <ul>
+            <li style="--i:0"><a href="#about" data-p="about">About</a></li>
+            <li style="--i:1"><a href="#experience" data-p="experience">Experience</a></li>
+            <li style="--i:2"><a href="#education" data-p="education">Education</a></li>
+            <li style="--i:3"><a href="#projects" data-p="projects">Projects</a></li>
+            <li style="--i:4"><a href="#certifications" data-p="certifications">Certifications &amp; Achievements</a>
+            </li>
+            <li style="--i:5"><a href="#languages" data-p="languages">Languages</a></li>
+        </ul>
+        <p class="hint">&uarr; &darr; to move</p>
+    </nav>
+
+    <main id="stage">
+        <section id="about" class="panel">
+            <div class="hero">
+                <img class="avatar"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9W3AGX8taM470cU_odN45NJvdiEXYSku7A&s"
+                    alt="Vivien's avatar">
+                <div>
+                    <h2 class="typewriter">Hi, I'm Vivien :) </h2>
+                    <p>Software Developer | Backend-focused</p>
+                    <div class="social">
+                        <a href="https://github.com/vyvienne" target="_blank" rel="noopener" aria-label="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/vivien-tan-wan-yin" target="_blank" rel="noopener"
+                            aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="files/TanWanYin_Resume.pdf" aria-label="Download CV"><i
+                                class="fas fa-file-download"></i></a>
+                    </div>
                 </div>
             </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#about" data-section="about">About</a></li>
-                <li><a href="#experience" data-section="experience">Experience</a></li>
-                <!-- <li><a href="#skills" data-section="skills">Skills</a></li> -->
-                <li><a href="#projects" data-section="projects">Projects</a></li>
-                <li><a href="#honors" data-section="projects">Awards & Honors</a></li>
-                <!-- <li><a href="#contact" data-section="contact">Contact</a></li> -->
-            </ul>
+            <p>I'm a Software Engineer with 3+ years of experience building backend systems, APIs and automated
+                workflows that replace manual processes. I work hands-on with n8n, Node-RED, Airflow and Python, and I'm
+                actively building AI-powered tools with LLMs. I learn by building: I turn business problems into working
+                prototypes and keep improving them until people actually use them.</p>
+        </section>
 
-        </nav>
-    </header>
+        <section id="experience" class="panel">
+            <h2>Experience</h2>
+            <a class="row" href="https://www.irs-software.com"><time>June 2026 – Current</time>
+                <h3>Software Developer</h3>
+                <h4>IRS Software Solution (M) Sdn Bhd</h4>
+            </a>
+            <a class="row" href="https://www.footfallcam.com/en/"><time>April 2025 – May 2026</time>
+                <h3>Software Engineer</h3>
+                <h4>FootfallCam</h4>
+            </a>
+            <a class="row" href="https://www.footfallcam.com/en/"><time>April 2023 – March 2025</time>
+                <h3>Associate Software Engineer</h3>
+                <h4>FootfallCam</h4>
+            </a>
+            <a class="row" href="https://www.pbebank.com/"><time>Sept 2022 – Dec 2022</time>
+                <h3>IT Intern</h3>
+                <h4>Public Bank Berhad</h4>
+            </a>
+            <a class="row" href="https://www.ansell.com/my/en"><time>Sept 2020 – May 2021</time>
+                <h3>Project Management Trainee</h3>
+                <h4>Ansell</h4>
+            </a>
+        </section>
 
-    <!-- <div class="heartbeat-circle"></div> -->
-    <div class="heartbeat-circle-2"></div>
-    <div class="heartbeat-circle-3"></div>
-
-    <section id="about" class="about">
-        <section class="hero">
-            <img class="avatar"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI9W3AGX8taM470cU_odN45NJvdiEXYSku7A&s"
-                alt="User Avatar">
-            <div class="hero-content">
-                <h1 class="typewriter">Hi, I'm Vivien :) </h1>
-                <p>Software Developer | Backend-focused</p>
-                <div class="social-links">
-                    <a href="https://github.com/vyvienne" target="_blank" class="social-btn github" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com/in/vivien-tan-wan-yin" target="_blank" class="social-btn linkedin"
-                        aria-label="LinkedIn">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                    <!-- <a href="https://youtube.com/@vivientanwy" target="_blank" class="social-btn youtube"
-                        aria-label="YouTube">
-                        <i class="fab fa-youtube"></i>
-                    </a> -->
-                    <a href="files/TanWanYin_Resume.pdf" class="social-btn cv" aria-label="CV">
-                        <i class="fas fa-file-download"></i>
-                    </a>
-                </div>
-
-                <!-- Download Resume Button -->
-
+        <section id="education" class="panel">
+            <h2>Education</h2>
+            <div class="row"><time>2019 – 2023</time>
+                <h3>Bachelor of Computer Science (Hons) Mobile Computing and Networking</h3>
+                <h4>UCSI University, Kuala Lumpur Campus</h4>
+                <p class="cgpa">CGPA <b>3.86</b> / 4.0</p>
             </div>
         </section>
 
-
-        <div class="about-content"></div>
-        <p>I'm a backend-focused software engineer with 3 years of experience working with C#, .NET,
-            and SQL Server.
-            I have been building and maintaining backend systems that support real-time data analytics for
-            physical spaces
-            like retail stores and public venues. I enjoy solving technical problems, writing clean and maintainable
-            code, and
-            collaborating across teams to deliver reliable features. My work has included developing APIs, streamlining
-            internal
-            workflows, and improving performance for large data queries. I’m always looking to grow as a developer, take
-            on new challenges, and contribute to impactful products!</p>
-    </section>
-
-    <!-- <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-            <div class="skill-card">C#</div>
-            <div class="skill-card">JavaScript</div>
-            <div class="skill-card">Java</div>
-            <div class="skill-card">ASP.NET</div>
-            <div class="skill-card">MySQL</div>
-            <div class="skill-card">React.js</div>
-            <div class="skill-card">Git</div>
-            <div class="skill-card">Odoo</div>
-            <div class="skill-card">Jenkins</div>
-            <div class="skill-card">ArgoCD</div>
-        </div>
-    </section> -->
-
-    <section id="experience" class="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-wrapper">
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">June 2026 – Current</div>
-                    <div class="timeline-content">
-                        <a href="https://www.irs-software.com">
-                            <h3>Software Developer</h3>
-                            <h4>IRS Software Solution (M) Sdn Bhd</h4>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">April 2025 – May 2026</div>
-                    <div class="timeline-content">
-                        <a href="https://www.footfallcam.com/en/">
-                            <h3>Software Engineer</h3>
-                            <h4>FootfallCam</h4>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">April 2023 – March 2025</div>
-                    <div class="timeline-content">
-                        <a href="https://www.footfallcam.com/en/">
-                            <h3>Associate Software Engineer</h3>
-                            <h4>FootfallCam</h4>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Sept 2022 – Dec 2022</div>
-                    <div class="timeline-content">
-                        <a href="https://www.pbebank.com/">
-                            <h3>IT Intern</h3>
-                            <h4>Public Bank Berhad</h4>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Sept 2020 – May 2021</div>
-                    <div class="timeline-content">
-                        <a href="https://www.ansell.com/my/en">
-                            <h3>Project Management Trainee</h3>
-                            <h4>Ansell</h4>
-                        </a>
-                    </div>
-                </div>
+        <section id="projects" class="panel">
+            <h2>Projects</h2>
+            <div class="cols">
+                <a class="row" href="https://github.com/Vyvienne/chatty-frog">
+                    <h3>Chatty Frog</h3>
+                    <p>A simple chat bot using HTML, CSS, and JavaScript</p>
+                </a>
+                <a class="row" href="https://github.com/Vyvienne/random-quote-machine">
+                    <h3>Random Quote Machine</h3>
+                    <p>A simple quote generator application using HTML, CSS, and JavaScript</p>
+                </a>
+                <a class="row" href="https://github.com/Leykwan132/ai-healthcare">
+                    <h3>MediBuddyAI</h3>
+                    <p>AI healthcare scheduler/reminder and follow-up application <em>(AAIMS25 AI Code Fest
+                            Hackathon)</em></p>
+                </a>
+                <a class="row" href="https://github.com/Vyvienne/Group-3-restaurant">
+                    <h3>Restaurant Ordering System</h3>
+                    <p>A responsive web-based restaurant ordering system built as part of a university group project.
+                    </p>
+                </a>
+                <a class="row" href="https://github.com/Vyvienne/heart-mart">
+                    <h3>Heart Mart</h3>
+                    <p>An Android project of online ordering mobile app.</p>
+                </a>
+                <a class="row" href="https://github.com/Vyvienne/LQ-Online-ucsi">
+                    <h3>LQ Online</h3>
+                    <p>A Flutter project of LQ-Online hotel mobile app.</p>
+                </a>
+                <a class="row" href="https://github.com/Vyvienne/fractionCalculator-java">
+                    <h3>Fraction Calculator</h3>
+                    <p>A simple console fraction calculator.</p>
+                </a>
+                <a class="row" href="https://github.com/Vyvienne/wordLengthHistogram-java">
+                    <h3>Word Length Histogram</h3>
+                    <p>A simple program to calculate the occurrence of words with the specified number of characters.
+                    </p>
+                </a>
             </div>
-            <!-- Interactive Cat -->
-            <div class="experience-image">
-                <img id="cat"
-                    src="https://avatars.githubusercontent.com/u/97293388?s=400&u=aa03a9f8d9ff22c9a5aed7fe7d02ff06e8d5c393&v=4">
-                <img />
+        </section>
+
+        <section id="certifications" class="panel">
+            <h2>Certifications &amp; Achievements</h2>
+            <a class="row" href="https://www.coursera.org/account/accomplishments/specialization/3HBM53B2STGM"
+                target="_blank" rel="noopener"><time>2026</time>
+                <h3>Google AI Professional Certificate</h3>
+                <h4>Google</h4>
+            </a>
+            <a class="row" href="https://simpli-web.app.link/e/p4G5LG5V84b" target="_blank"
+                rel="noopener"><time>2026</time>
+                <h3>No Code AI Agent Builder with n8n</h3>
+                <h4>Simplilearn</h4>
+            </a>
+            <a class="row"
+                href="https://kuala-lumpur.aitinkerers.org/p/asean-ai-buildathon-healthcare-reimagined"><time>2025</time>
+                <h3>1st Place, AAIMS25 AI Code Fest - Healthcare Reimagined</h3>
+                <h4>MediBuddyAI</h4>
+            </a>
+            <div class="row"><time>2023</time>
+                <h3>Nominee, Valedictorian Award</h3>
+                <h4>Class of 2023, UCSI University</h4>
             </div>
-        </div>
-    </section>
+            <div class="row"><time>2022</time>
+                <h3>Kuok Foundation Scholarship Recipient</h3>
+            </div>
+            <div class="row"><time>2019</time>
+                <h3>UCSI Trust Scholarship Recipient</h3>
+            </div>
+        </section>
 
+        <section id="languages" class="panel">
+            <h2>Languages</h2>
+            <div class="row">
+                <h3>Mandarin</h3>
+                <h4>Native</h4>
+            </div>
+            <div class="row">
+                <h3>English</h3>
+                <h4>Fluent</h4>
+            </div>
+            <div class="row">
+                <h3>Bahasa Malaysia</h3>
+                <h4>Fluent</h4>
+            </div>
+        </section>
+    </main>
 
-    <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
-        <br />
-        <div class="projects-grid">
-            <a href="https://github.com/Vyvienne/chatty-frog" class="project-card">
-                <h3>Chatty Frog</h3>
-                <p>A simple chat bot using HTML, CSS, and JavaScript</p>
-                <!-- <br />
-                <div class="image-card">
-                    <img id="chatty-frog-image">
-                </div> -->
-            </a>
-            <a href="https://github.com/Vyvienne/random-quote-machine" class="project-card">
-                <h3>Random Quote Machine</h3>
-                <p>A simple quote generator application using HTML, CSS, and JavaScript</p>
-                <!-- <br />
-                <div class="image-card">
-                    <img id="random-quote-machine-image">
-                </div> -->
-            </a>
-            <a href="https://github.com/Leykwan132/ai-healthcare" class="project-card">
-                <h3>MediBuddyAI</h3>
-                <p>AI healthcare scheduler/reminder and
-                    follow-up
-                    application { <em> AAIMS25 AI Code Fest Hackathon </em> } </p>
-                <!-- <br />
-                <div class="image-card">
-                    <img id="medibuddy_ai-image">
-                </div> -->
-            </a>
-            <a href="https://github.com/Vyvienne/Group-3-restaurant" class="project-card">
-                <h3>Restaurant Ordering System</h3>
-                <p>A responsive web-based restaurant ordering system built as part of a university group project.</p>
-                <!-- <br />
-                <div class="image-card">
-                    <img id="group-3-restaurant-image">
-                </div> -->
-            </a>
-            <a href="https://github.com/Vyvienne/heart-mart" class="project-card">
-                <h3>Heart Mart</h3>
-                <p>An Android project of online ordering mobile app.</p>
-                <!-- <br />
-                <div class="image-card">
-                    <img id="heart-mart-image">
-                </div> -->
-            </a>
-            <a href="https://github.com/Vyvienne/LQ-Online-ucsi" class="project-card">
-                <h3>LQ Online</h3>
-                <p>A Flutter project of LQ-Online hotel mobile app.</p>
-                <!-- <br />
-                <div class="image-card">
-                    <img id="lq-online-image">
-                </div> -->
-            </a>
-            <a href="https://github.com/Vyvienne/fractionCalculator-java" class="project-card">
-                <h3>Fraction Calculator</h3>
-                <p>A simple console fraction calculator.</p>
-            </a>
-            <a href="https://github.com/Vyvienne/wordLengthHistogram-java" class="project-card">
-                <h3>Word Length Histogram </h3>
-                <p>A simple program to calculate the occurrence of words with the specified number of character.</p>
-            </a>
-        </div>
-    </section>
-
-    <section id="honors" class="honors">
-        <h2 class="section-title">Awards & Honors</h2>
-        <br />
-        <div class="skills-grid">
-            <a href="https://kuala-lumpur.aitinkerers.org/hackathons/h_2YdqIPR1yZs/results" class="skill-card">
-                <p>Winner of AAIMS25 AI Code Fest - Healthcare Reimagined</p>
-            </a>
-            <div class="skill-card">Nominee for Veledictorian Award Class of 2023</div>
-            <div class="skill-card">Kuok Foundation Scholarship Recipient</div>
-            <div class="skill-card">UCSI Trust Scholarship Recipient</div>
-        </div>
-        <br />
-        <div class="image-card">
-            <img id="awards-honors-images">
-        </div>
-
-    </section>
-
-    <!-- <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Your Email" required />
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section> -->
-
-    <button id="backToTop" aria-label="Back to Top">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-            stroke-linecap="round" stroke-linejoin="round">
-            <line x1="12" y1="19" x2="12" y2="5"></line>
-            <polyline points="5 12 12 5 19 12"></polyline>
-        </svg>
-    </button>
-
-    <footer>
-        <p> &copy; 2025 vyvienne.github.io
-            <!-- <a href="https://linkedin.com/in/vivien-tan-wan-yin" target="_blank" aria-label="LinkedIn">
-                LinkedIn
-            </a> -->
-        </p>
-    </footer>
-
+    <footer>&copy; 2026 vyvienne.github.io</footer>
     <script src="script.js"></script>
 </body>
 
