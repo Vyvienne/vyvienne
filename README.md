@@ -3,13 +3,13 @@
 </p>
 
 <p align="center">
-  <a href="https://vyvienne.github.io">
+  <a href="https://vyvienne.github.io/vyvienne">
     <img src="https://readme-typing-svg.demolab.com?font=Raleway&weight=700&size=22&duration=3000&pause=1000&color=FF7B96&center=true&vCenter=true&width=700&lines=Backend+systems+%26+APIs;Automated+workflows+that+replace+manual+work;AI-powered+tools+with+LLMs;I+learn+by+building" alt="Typing animation" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://vyvienne.github.io"><img src="https://img.shields.io/badge/Portfolio-vyvienne.github.io-ff7b96?style=for-the-badge&labelColor=3a1519" alt="Portfolio" /></a>
+  <a href="https://vyvienne.github.io/vyvienne"><img src="https://img.shields.io/badge/Portfolio-vyvienne.github.io-ff7b96?style=for-the-badge&labelColor=3a1519" alt="Portfolio" /></a>
   <a href="https://linkedin.com/in/vivien-tan-wan-yin"><img src="https://img.shields.io/badge/LinkedIn-Connect-8e3045?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=3a1519" alt="LinkedIn" /></a>
 </p>
 
